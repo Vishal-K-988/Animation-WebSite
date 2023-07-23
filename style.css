@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nunito+Sans:wght@200&display=swap');
+
+@font-face {
+    font-family: PP mori;
+    src: url(./ppmori.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial,         
+     Helvetica, sans-serif; */
+     /* background-color: #0f0d0d; */
+     color: #fff;
+     font-family: 'Montserrat', sans-serif;
+     /* font-family: 'Nunito Sans', sans-serif; */
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    /* z-index == z ke respect m  */
+    z-index: 8;
+    /* color change karega  */
+    mix-blend-mode: difference;
+    transition: left linear 0.01s top linear 0.1s;
+
+/* while hovering over boxes  */
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* gsap will target this ! 
+
+At first this thing was missing from my project ! 
+PHEW --decoded*/
+.main{
+    background-color: #0F0D0D;
+    cursor: none;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    border-bottom: 2px solid #494949;
+    z-index: 9;
+    position: relative;
+    padding-top: 12vw;
+}
+
+#nav{
+    height: 45px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    /* nav baar har time uppar dikhe uska h  */
+    position: fixed;
+    /* color change hoote rahega  */
+    mix-blend-mode: difference;
+    z-index: 98;
+}
+
+#nav img{
+    height: 24px;
+}
+
+#nav-part2{
+
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    gap: 20px; 
+}
+
+#nav #circle{
+    background-color:white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+#nav h4{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#nav h4:nth-child(1) {
+   
+    border-bottom-style:groove;
+}
+
+
+
+
+.page1 h1 {
+    font-size: 11vh;
+    margin-left: 40vh;
+    
+    font-weight: 900;
+}
+
+.page1 h2{
+    font-size:10vh;
+    margin-left: 50vh;
+    font-weight: 900;
+}
+
+.page1 video{
+    width: 60%;
+    /* margin-left: 20%; */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    
+}
+
+/* page 2  */
+
+.page2 {
+    height: 90vh;
+    width: 100%;
+    padding: 2% 5vw;
+    border-bottom: 2px solid #494949;
+    z-index: 9;
+    position: relative;
+    /* padding-left: 2vh;
+    padding-right: 2vh; */
+}
+
+.page2  h1 {
+    font-weight: 900;
+    margin-top: 1vh;
+    font-family: PP mori;
+    font-size: 10vh;
+    color: #111;
+}
+
+
+
+.page2-container{
+    height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 5vm; */
+    
+}
+
+.page2-left {
+    /* background-color: blue; */
+    width: 37%;
+    padding-left: 2VW;
+}
+
+
+.page2-left h2{
+    font-size: 7vh;
+    font-weight: 500 ;
+    color: #111;
+    font-family: PP mori;
+
+    
+    line-height: 4vw;
+    /* color: red; */
+    /* padding-left: 2vh; */
+}
+
+
+.page2-right{
+    width: 24%;
+    /* background-color: blue; */
+    padding-right: 2vh;
+    color: #111
+}
+
+.page2-right button {
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 0;
+    background-color: #EDBFFF;
+    color: #111;
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+
+.page2-right p{
+    font-size: 20px;
+    line-height: 2vw;
+    font-weight: 1000;
+    font-family: PP mori;
+    color: #111;
+} 
+
+/* page 3 start  */
+.page3{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 97px;
+    border-bottom: 2px solid #494949;
+    z-index: 9;
+    position: relative;
+
+}
+
+.page3 h1{
+    color: #111;
+    font-size: 5vw;
+    font-weight: 900;
+    padding-left: 3vw;
+    font-family: PP mori;   
+}
+
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.page3-part1 img{
+     height: 400px;
+     width: 70vw;
+     border-radius: 2%;
+     margin-top: 126px;
+     padding-left: 2vw;
+     margin-left: 1vw;
+}
+.page3-part1 video {
+    width: 89vw;
+    height: 55vh;
+}
+ 
+
+/* page 4  */
+
+.page4 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;    
+    z-index: 9;
+    padding: 140px 100px;
+    border-bottom: 2px solid #494949;
+
+}
+
+/* element div */
+
+.elem{
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* background-color: salmon; */
+    margin-bottom: 10PX;
+    
+}
+
+
+.elem h1 {
+    font-size: 5.3vw; 
+    font-weight: 600;
+    font-family: PP mori;
+    /* transition */
+    transition: all ease-out 0.5s ;
+}
+
+.text-div{
+    /* background-color: lightblue ; */
+    /* div ke bahar vaali cheezo ko hide kar diya  */
+    overflow: hidden;
+    height: 79px;
+}
+
+
+/* adjusting image heights  */
+
+#black{
+    height:60vh;
+    margin-top: 20%;
+}
+
+#gym{
+    height:60vh;
+    margin-top: 20%;
+}
+
+#idc{
+    height:32vh;
+}
+
+#love{
+    height:60vh;
+    margin-top: 10%
+}
+
+#pvr{
+    height: 60vh;
+    margin-bottom: 10%;
+}
+
+#wake{
+    height: 60vh;
+    margin-bottom: 10%;
+}
+
+
+.elem img{
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s ;
+    transform: translatey(10%) rotate(2deg) ;
+}
+/* first img */
+.elem img:nth-child(1){
+    /* position */
+    left:4%;
+    height: 30vh;
+}
+
+/* second img */
+.elem img:nth-child(3){
+    right :5%;
+    height: 40vh;
+}
+
+/* hover */
+.elem:hover h1 {
+    
+    transform: translateY(-100%);
+}
+
+#h1first:hover{
+    color: salmon; 
+}
+
+#h1second:hover{
+    color: #FFD1DA; 
+}
+
+#h1third:hover{
+    color:#d7b17b;
+}
+
+
+.elem:hover img {
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+    /* transition: all ease-out 0.5s ; */
+}
+
+
+/* page 5  */
+.page5 {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color:red; */
+    z-index: 9;
+    padding: 140px 100px;
+    position: relative;
+}
+
+.page5 h2{
+    font-size: 4vw;
+    font-family: PP mori;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.box{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding: 0 20px;
+    border-top: 2px solid #dadada;
+}
+
+.box:nth-child(:last-child){
+    border-bottom: 2px solid #dadada;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+/* skipped for future updates !  */
+
+
+    /* height: 30vh;
+    width: 100%; */
+    /* background-color: #d7b17b; */
+    /* background-color: black;
+    color: white;
+    font-weight: 900;
+    font-size: 1vw; */
+
+
+.footer h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20vh;
+    font-weight: 100;
+    color : white ;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: PP mori;
+}
+.footer{
+    height: 27vh;
+    width: 100%;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1vw; */
+    font-family: PP mori;
+    padding-left: 1%;
+    padding-right: 1% ;
+
+}

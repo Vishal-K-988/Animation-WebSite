@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <!-- locomotive cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+    <!-- making cursor outside div kyuki -- locomotive cursor ko hijack kar leta h;; jisse uski position fixed rahegi jo ki rhene nhi dena   -->
+
+    <!-- cursor  -->
+
+    <div class="cursor">
+
+    </div>
+    <!-- navbar -- bahar rakha kyuki uspr position fixed kaam nahi karega !  -->
+    <div id="nav">
+
+        <a href="#"> 
+        <img        
+src="https://d33wubrfki0l68.cloudfront.net/439bf938233c24af021ffe6d206cd42f546e1143/ff4ed/assets/logo.svg" alt=""></a>  
+            <div id="nav-part2">
+                <h4>Home</h4>
+                <h4> Work</h4>
+                <h4>Studio</h4>
+                <h4>Contact</h4>
+            </div>
+            <div id="nav-part3">
+                <div id="circle"></div>
+            </div>
+            
+            
+    </div>
+    <div class="main">
+        <div class="page1"> 
+            
+          <!-- tEXT -->
+             <h1>Digitally Crafted </h1>
+             <h2>brand Experience</h2>
+             <!-- video  -->
+            <video class="page1-video" autoplay muted loop src="https://duo-studio.co/assets/home/Duo%20Reel--Desktop-reduced.mp4 "></video>
+        
+        </div>
+
+        <!-- page 2 -->
+        <div class="page2">
+            <h1>We are YOU,</h1>
+            <div class="page2-container">
+                <div class="page2-left">
+                    <h2>"Tech-savvy Wonders: Unleashing Innovation in Every Byte !"</h2>
+                </div>
+                <div class="page2-right">
+                    <p>Tech you can’t feel. Leaving just space for sound to come to life. Powered by custom sound technology. Beautifully authentic, at any frequency.
+                    </p>
+                    <button onclick="window.location.href = 'https://duo-studio.co/'">About us</button>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- page 3  -->
+        <div class="page3">
+            <h1>Selected Works</h1>
+            <div class="page3-part1">
+                <img src="https://images.unsplash.com/photo-1610983142922-2e3c4d331934?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    alt="">
+                <video autoplay loop muted
+                    src="/video/coding.mp4"></video>
+            </div>
+
+
+        </div>
+
+        <!-- page 4  -->
+        <div class="page4">
+
+            <!-- 1ST ELEMENT -->
+            
+            <div class="elem">
+                <img id="black" src="/images/black.jpg"
+                    alt="BLACK IMAGE">
+                <div class="text-div">
+                    <h1 id="h1first">Vishal</h1>
+                    <h1 id="h1first">Vishal</h1>
+                </div>
+                <img id="gym" src="/images/gym.jpg"
+                    alt="Gym">
+            </div>
+
+            <!-- second element  -->
+            <div class="elem">
+                <img id="idc" src="/images/idc.jpg"
+                    alt="IDC">
+                <div class="text-div">
+                    <h1 id="h1second">Kumar</h1>
+                    <h1 id="h1second">Kumar</h1>
+                </div>
+                <img id="love" src="/images/love.jpg"
+                    alt="love">
+            </div>
+
+            <!-- third element  -->
+            <div class="elem">
+                <img id="pvr" src="/images/pvr.jpg"
+                    alt="pvr">
+                <div class="text-div">
+                    <h1 id="h1third">Geed</h1>
+                    <h1 id="h1third">Geed</h1>
+                </div>
+                <img id="wake" src="/images/wake.jpg"
+                    alt="wake">
+            </div>
+
+        </div>
+    
+            <!-- page5 -->
+        
+        <div class="page5">
+            <h2>Skills </h2>
+            <!-- made a custom attribute  -->
+            <!-- 1st box  -->
+            <div class="box" data-image="https://images.pexels.com/photos/39494/spider-web-tree-branches-pattern-39494.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <h3>Web</h3>
+                <h4>2021</h4>
+            </div>
+
+            <!-- 2nd box -->
+            <div class="box" data-image="https://images.pexels.com/photos/3661228/pexels-photo-3661228.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <h3>Docker</h3>
+                <h4>2021</h4>
+            </div>
+
+            <!-- 3rd box -->
+            <div class="box" data-image="https://images.pexels.com/photos/3374334/pexels-photo-3374334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <h3>AWS</h3>
+                <h4>2021</h4>
+            </div>
+
+            <!-- 4th box  -->
+            <div class="box" data-image="https://images.unsplash.com/photo-1463567517034-628c51048aa2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80">
+                <h3>Kubernetes </h3>
+                <h4>2021</h4>
+            </div>
+
+            <!-- 5th box -->
+            <div class="box" data-image="https://images.unsplash.com/photo-1652006805693-e241032ffd47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80">
+                <h3>Javascript</h3>
+                <h4>2021</h4>
+            </div>
+
+            <!--  -->
+        </div>
+
+        <!-- footer -->
+
+       <div class="footer">
+        <!-- <h1> Thanks </h1> -->
+        <div class="info">
+            <a href="https://github.com/Vishal-K-988">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+
+            </a>
+            <a href="https://www.linkedin.com/in/vishal-k-26-05-2001/">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg>
+            </a>
+            <a href="https://twitter.com/Vishal44495963">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  </svg>
+
+            </a>
+        </div>
+       </div>
+
+
+
+    </div>
+
+    
+    
+    <!-- locomotive cdn -- smooth scrolling -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- gsap cdn   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- -- scroll trigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- script.js -->
+<script src="script.js"></script>
+
+</body>
+</html>
